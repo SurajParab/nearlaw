@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:background="@drawable/border_layout"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_layout"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLines="1" />
+
+
+
+        <TextView
+            android:id="@+id/forgotpass"
+            android:clickable="true"
+
+            android:layout_below="@id/userpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Forgot Password?"
+            android:textColor="#000000" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7">
+
+        <!-- <TextView
+             android:id="@+id/later"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="15dp"
+             android:layout_marginTop="2dp"
+             android:text="Do it Later"
+             android:textSize="15dp"
+             android:textStyle="bold" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/loading_icon"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/createacc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create Account"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

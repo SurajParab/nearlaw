@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ravi.lawyerprofile.SignIn6of62">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:background="@android:color/white"
+
+           >
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:background="@drawable/frame"
+               android:orientation="vertical"
+               android:padding="5dp"
+               android:id="@+id/fram22">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="15dp">
+
+                   <TextView
+                       android:id="@+id/chargeMeeting"
+                       android:layout_width="150dp"
+                       android:layout_height="40dp"
+
+                       android:layout_alignParentTop="true"
+                       android:gravity="center"
+                       android:paddingTop="10dp"
+
+                       android:text="30 Min. Meeting"
+                       android:textSize="15dp"
+                       android:textAlignment="center"
+                       android:textColor="@color/text"
+                       android:layout_alignBottom="@+id/meetingcost"
+                       android:layout_toStartOf="@+id/imageView" />
+
+                   <ImageView
+                       android:layout_width="35dp"
+                       android:layout_height="40dp"
+                       android:gravity="center"
+                       android:src="@drawable/ic_action_rupies"
+                       android:id="@+id/imageView2"
+                       android:layout_alignParentTop="true"
+                       android:layout_toEndOf="@+id/chargeMeeting" />
+                   <EditText
+                       android:id="@+id/meetingcost"
+                       android:layout_width="200dp"
+                       android:layout_height="40dp"
+                       android:textSize="15dp"
+                       android:ems="10"
+                       android:paddingLeft="5dp"
+                       android:background="@drawable/edittextbaground"
+                       android:inputType="numberDecimal"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentEnd="true"
+                       android:layout_toEndOf="@+id/imageView2" />
+
+
+
+                   <CheckBox
+                       android:id="@+id/meetingUponrequest"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Upon Request"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_below="@id/chargeMeeting"
+                       android:layout_alignParentBottom="true"/>
+               </RelativeLayout>
+
+           </RelativeLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+               android:background="@android:color/white"
+               android:padding="5dp"
+               android:textSize="20dp"
+               android:text="Meeting Fees"
+               android:textColor="@color/colorPrimaryDark" />
+
+
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:background="@android:color/white"
+
+           >
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:background="@drawable/frame"
+               android:orientation="vertical"
+               android:padding="5dp"
+               android:id="@+id/fram12">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <TextView
+                           android:id="@+id/day2"
+                           android:layout_width="150dp"
+                           android:layout_height="wrap_content"
+                           android:text="Day"
+                           android:paddingTop="10dp"
+                           android:textAlignment="center"
+
+                           android:gravity="center"
+                           android:textColor="@color/text"
+                           android:layout_alignParentTop="true"
+                           android:layout_alignParentStart="true" />
+                       <TextView
+                           android:id="@+id/time2"
+                           android:layout_width="150dp"
+                           android:layout_height="wrap_content"
+                           android:text="Time"
+                           android:paddingTop="10dp"
+                           android:textAlignment="center"
+
+                           android:gravity="center"
+                           android:textColor="@color/text"
+                           android:layout_alignParentTop="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toRightOf="@+id/day2"
+                           android:layout_toEndOf="@+id/day2" />
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/monday2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="MON"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true" />
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotsmonday2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/monday2" />
+
+
+
+
+                   </RelativeLayout>
+
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/tue2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="TUE"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true" />
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotstueday2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/tue2" />
+
+
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/wed2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="WED"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"/>
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotswed2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/wed2" />
+
+
+
+
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/thus2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="THU"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true" />
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotsthus2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/thus2" />
+
+
+
+
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/friday2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="FRI"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true" />
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotsfri2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/friday2" />
+
+
+
+
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <CheckBox
+                           android:id="@+id/sat2"
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:text="SAT"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true" />
+
+                       <com.androidbuts.multispinnerfilter.MultiSpinnerSearch
+                           android:id="@+id/slotssat2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:hintText="Select Available Time"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginBottom="10dp"
+                           android:layout_alignParentBottom="true"
+                           android:layout_alignParentEnd="true"
+                           android:layout_toEndOf="@+id/sat2" />
+
+
+
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:id="@+id/display2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignTop="@+id/slotssat"
+
+
+
+                       android:ems="10" />
+
+                   <TextView
+                       android:id="@+id/displaytue2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:ems="10"
+
+
+                       android:layout_alignTop="@+id/slotssat"
+                       android:layout_alignParentStart="true" />
+                   <TextView
+                       android:id="@+id/displaywed2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:ems="10"
+
+
+                       android:layout_alignTop="@+id/slotssat"
+                       android:layout_alignParentStart="true" />
+                   <TextView
+                       android:id="@+id/displaythus2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:ems="10"
+
+
+                       android:layout_alignTop="@+id/slotssat"
+                       android:layout_alignParentStart="true" />
+                   <TextView
+                       android:id="@+id/displayfri2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:ems="10"
+
+
+                       android:layout_alignTop="@+id/slotssat"
+                       android:layout_alignParentStart="true" />
+
+
+
+                   <TextView
+                       android:id="@+id/displaysat2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       android:ems="10"
+
+
+                       android:layout_alignTop="@+id/slotssat"
+                       android:layout_alignParentStart="true" />
+               </LinearLayout>
+
+           </RelativeLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="30dp"
+
+               android:background="@android:color/white"
+               android:padding="5dp"
+               android:textSize="20dp"
+               android:text="Meeting slots"
+               android:textColor="@color/colorPrimaryDark" />
+
+       </RelativeLayout>
+
+
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tabHost"
+           android:layout_centerHorizontal="true">
+           <Button
+               android:id="@+id/prevoius"
+               android:layout_width="120dp"
+               android:layout_height="40dp"
+               android:background="@drawable/buttonshape"
+
+               android:textAlignment="center"
+               android:drawableLeft="@drawable/ic_action_previous"
+               android:layout_marginLeft="5dp"
+
+               android:text="Back"
+               android:textSize="15dp"
+               android:textColor="#FFFFFF"
+               android:layout_marginBottom="20dp"
+
+               android:layout_alignParentStart="true"
+               android:layout_marginTop="20dp" />
+           <Button
+               android:id="@+id/next"
+
+
+
+               android:layout_marginTop="20dp"
+
+
+
+
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginBottom="20dp"
+
+
+               android:textColor="#FFFFFF"
+
+               android:layout_marginRight="5dp"
+
+               android:layout_width="120dp"
+               android:layout_height="40dp"
+               android:background="@drawable/buttonshape"
+
+               android:drawableRight="@drawable/ic_action_next"
+
+               android:text="     Next"
+               android:textSize="15dp"/>
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+</ScrollView>
